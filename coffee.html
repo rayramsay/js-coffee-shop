@@ -51,6 +51,17 @@
     var myImage;
     var myRevenueMessage;
 
+    myImage = document.getElementById("coffee-image");
+    myRevenueMessage = document.getElementById("revenue");
+
+    myImage.setAttribute('src', 'static/coffee_beans.jpg');
+
+    function makeCoffee() {
+        myImage.setAttribute('src', 'static/coffee_mug.jpg');
+    }
+
+    myImage.addEventListener('click', makeCoffee);
+
     // use this JavaScript object in further study step
 
     var prices = {
